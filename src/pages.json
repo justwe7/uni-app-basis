@@ -5,7 +5,7 @@
 			"style": {
 				"navigationBarTitleText": "首页",
 				"usingComponents": {
-					// "van-button": "/wxcomponents/dist/button/"
+					"van-button": "/wxcomponents/dist/button/index"
 				}
 			}
 		}
