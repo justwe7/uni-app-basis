@@ -1,0 +1,17 @@
+<view
+  class="custom-class {{ classPrefix }} {{ isImageName ? 'van-icon--image' : classPrefix + '-' + name }}"
+  style="{{ color ? 'color: ' + color + ';' : '' }}{{ size ? 'font-size: ' + size + ';' : '' }}{{ customStyle }}"
+  bind:tap="onClick"
+>
+  <van-info
+    wx:if="{{ info !== null }}"
+    info="{{ info }}"
+    custom-class="van-icon__info"
+  />
+  <image
+    wx:if="{{ isImageName }}"
+    src="{{ name }}"
+    mode="aspectFit"
+    class="van-icon__image"
+  />
+</view>

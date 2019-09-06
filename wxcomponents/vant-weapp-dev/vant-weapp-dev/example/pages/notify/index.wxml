@@ -1,0 +1,17 @@
+<van-nav-bar
+  title="Notify 消息通知"
+  left-text="返回"
+  left-arrow
+  bind:click-left="onClickLeft"
+/>
+
+<demo-block padding title="基础用法">
+  <van-button type="danger" bind:click="showNotify">基础用法</van-button>
+</demo-block>
+
+<demo-block padding title="自定义通知">
+  <van-button type="primary" class="demo-margin-right" bind:click="showCustomColor">自定义颜色</van-button>
+  <van-button type="primary" bind:click="showCustomDuration">自定义时长</van-button>
+</demo-block>
+
+<van-notify id="van-notify" safe-area-inset-top />

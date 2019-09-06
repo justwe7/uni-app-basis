@@ -1,0 +1,80 @@
+<demo-block title="基础用法" padding>
+  <van-button type="primary" bind:click="showBasic">展示弹出层</van-button>
+  <van-popup
+    show="{{ show.basic }}"
+    custom-style="padding: 30px 50px"
+    bind:close="hideBasic"
+  >
+    内容
+  </van-popup>
+</demo-block>
+
+<demo-block title="弹出位置" padding>
+  <view style="margin-bottom: 15px">
+    <van-button type="primary" bind:click="showTop" class="demo-margin-right">顶部弹出</van-button>
+    <van-button type="primary" bind:click="showBottom">底部弹出</van-button>
+  </view>
+
+  <van-button type="primary" bind:click="showLeft" class="demo-margin-right">左侧弹出</van-button>
+  <van-button type="primary" bind:click="showRight">右侧弹出</van-button>
+
+  <van-popup
+    show="{{ show.top }}"
+    position="top"
+    custom-style="height: 20%"
+    bind:close="hideTop"
+  />
+  <van-popup
+    show="{{ show.bottom }}"
+    position="bottom"
+    custom-style="height: 20%"
+    bind:close="hideBottom"
+  />
+  <van-popup
+    show="{{ show.left }}"
+    position="left"
+    custom-style="width: 20%; height: 100%"
+    bind:close="hideLeft"
+  />
+  <van-popup
+    show="{{ show.right }}"
+    position="right"
+    custom-style="width: 20%; height: 100%"
+    bind:close="hideRight"
+  />
+</demo-block>
+
+<demo-block title="关闭图标" padding>
+  <van-button type="primary" class="demo-margin-right" bind:click="showCloseIcon">关闭图标</van-button>
+
+  <van-popup
+    show="{{ show.closeIcon }}"
+    closeable
+    position="bottom"
+    custom-style="height: 20%"
+    bind:close="hideCloseIcon"
+  />
+
+  <van-button type="primary" bind:click="showCustomCloseIcon">自定义图标</van-button>
+
+  <van-popup
+    show="{{ show.customCloseIcon }}"
+    closeable
+    close-icon="close"
+    position="bottom"
+    custom-style="height: 20%"
+    bind:close="hideCustomCloseIcon"
+  />
+</demo-block>
+
+<demo-block title="圆角弹窗" padding>
+  <van-button type="primary" bind:click="showRound">圆角弹窗</van-button>
+
+  <van-popup
+    show="{{ show.round }}"
+    round
+    position="bottom"
+    custom-style="height: 20%"
+    bind:close="hideRound"
+  />
+</demo-block>
