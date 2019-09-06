@@ -56,13 +56,11 @@ npm run dev
 ```js
 	this.$get({
 		url: "/api",
-		data: {
-      a: 1
-    }
-	  }).then(res => {
-			console.log(res);
-		}).catch(err => {
-			console.log(err);
+		data: {a: 1}
+	}).then(res => {
+		console.log(res);
+	}).catch(err => {
+		console.log(err);
 	})
 ```  
 
