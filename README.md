@@ -6,8 +6,10 @@
     - [css样式建议](#css%e6%a0%b7%e5%bc%8f%e5%bb%ba%e8%ae%ae)
     - [项目配置](#%e9%a1%b9%e7%9b%ae%e9%85%8d%e7%bd%ae)
     - [引入三方小程序ui库](#%e5%bc%95%e5%85%a5%e4%b8%89%e6%96%b9%e5%b0%8f%e7%a8%8b%e5%ba%8fui%e5%ba%93)
+    - [git协作](#git%e5%8d%8f%e4%bd%9c)
     - [甲方提供的接口及账号](#%e7%94%b2%e6%96%b9%e6%8f%90%e4%be%9b%e7%9a%84%e6%8e%a5%e5%8f%a3%e5%8f%8a%e8%b4%a6%e5%8f%b7)
     - [Customize configuration](#customize-configuration)
+
 # 食安
 
 
@@ -105,6 +107,14 @@ dist/build/mp-weixin/  //上线前需修改为这个字段
 ```
 3. 页面直接使用，参照ui库文档即可  
 
+### git协作    
+https://17qu.top/gitji-chu/  
+
+版本主分支定为feature-v1.0
+  
+1. 分别基于feature-v1.0拉取自己的分支如：feature-v1.0-a feature-v1.0-b
+2. 只推送代码至自己的分支
+3. 完成项目合并feature-v1.0
 
 ### 甲方提供的接口及账号
 目前食安项目已完成了app，所以移动端接口已经完成，需要联调或有疑问可联系研发负责人韩亚辉。
