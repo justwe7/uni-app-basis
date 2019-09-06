@@ -1,4 +1,15 @@
+- [食安](#%e9%a3%9f%e5%ae%89)
+    - [todo](#todo)
+    - [运行项目](#%e8%bf%90%e8%a1%8c%e9%a1%b9%e7%9b%ae)
+    - [项目结构](#%e9%a1%b9%e7%9b%ae%e7%bb%93%e6%9e%84)
+    - [全局js变量及方法](#%e5%85%a8%e5%b1%80js%e5%8f%98%e9%87%8f%e5%8f%8a%e6%96%b9%e6%b3%95)
+    - [css样式建议](#css%e6%a0%b7%e5%bc%8f%e5%bb%ba%e8%ae%ae)
+    - [项目配置](#%e9%a1%b9%e7%9b%ae%e9%85%8d%e7%bd%ae)
+    - [引入三方小程序ui库](#%e5%bc%95%e5%85%a5%e4%b8%89%e6%96%b9%e5%b0%8f%e7%a8%8b%e5%ba%8fui%e5%ba%93)
+    - [甲方提供的接口及账号](#%e7%94%b2%e6%96%b9%e6%8f%90%e4%be%9b%e7%9a%84%e6%8e%a5%e5%8f%a3%e5%8f%8a%e8%b4%a6%e5%8f%b7)
+    - [Customize configuration](#customize-configuration)
 # 食安
+
 
 ### todo
 - [] 考虑处理刘海屏兼容
@@ -7,7 +18,6 @@
 - [] 接口暂未调用
    
 ### 运行项目
-## Project setup
 ```
 npm install
 
@@ -97,6 +107,18 @@ dist/build/mp-weixin/  //上线前需修改为这个字段
 ```
 3. 页面直接使用，参照ui库文档即可  
 
+
+### 甲方提供的接口及账号
+目前食安项目已完成了app，所以移动端接口已经完成，需要联调或有疑问可联系研发负责人韩亚辉。
+	
+1. 测试环境移动端接口文档：http://crouter.yunzongnet.com/xyscm-foodsafety-app/t3397/swagger-ui.html
+2. 接口地址：http://crouter.yunzongnet.com/xyscm-foodsafety-app/t3397/
+3. 安卓app下载地址：https://fir.im/58xr?release_id=5d67460b23389f7d67d4a5c7
+	
+测试环境的账号（可登录app）：   
+千喜鹤质检员、区域主任、战区总监账号（在食安首页切换组织）：12345678900     密码：a123456  
+禧云食安专员：12345678909    密码：a123456   
+禧云区域经理：12345678908    密码：a123456   
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
