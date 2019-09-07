@@ -1,14 +1,15 @@
 - [食安](#%e9%a3%9f%e5%ae%89)
-    - [todo](#todo)
-    - [运行项目](#%e8%bf%90%e8%a1%8c%e9%a1%b9%e7%9b%ae)
-    - [项目结构](#%e9%a1%b9%e7%9b%ae%e7%bb%93%e6%9e%84)
-    - [全局js变量及方法](#%e5%85%a8%e5%b1%80js%e5%8f%98%e9%87%8f%e5%8f%8a%e6%96%b9%e6%b3%95)
-    - [css样式建议](#css%e6%a0%b7%e5%bc%8f%e5%bb%ba%e8%ae%ae)
-    - [项目配置](#%e9%a1%b9%e7%9b%ae%e9%85%8d%e7%bd%ae)
-    - [引入三方小程序ui库](#%e5%bc%95%e5%85%a5%e4%b8%89%e6%96%b9%e5%b0%8f%e7%a8%8b%e5%ba%8fui%e5%ba%93)
-    - [git协作](#git%e5%8d%8f%e4%bd%9c)
-    - [甲方提供的接口及账号](#%e7%94%b2%e6%96%b9%e6%8f%90%e4%be%9b%e7%9a%84%e6%8e%a5%e5%8f%a3%e5%8f%8a%e8%b4%a6%e5%8f%b7)
-    - [Customize configuration](#customize-configuration)
+		- [todo](#todo)
+		- [运行项目](#%e8%bf%90%e8%a1%8c%e9%a1%b9%e7%9b%ae)
+		- [用户角色](#%e7%94%a8%e6%88%b7%e8%a7%92%e8%89%b2)
+		- [项目结构](#%e9%a1%b9%e7%9b%ae%e7%bb%93%e6%9e%84)
+		- [全局js变量及方法](#%e5%85%a8%e5%b1%80js%e5%8f%98%e9%87%8f%e5%8f%8a%e6%96%b9%e6%b3%95)
+		- [css样式建议](#css%e6%a0%b7%e5%bc%8f%e5%bb%ba%e8%ae%ae)
+		- [项目配置](#%e9%a1%b9%e7%9b%ae%e9%85%8d%e7%bd%ae)
+		- [引入三方小程序ui库](#%e5%bc%95%e5%85%a5%e4%b8%89%e6%96%b9%e5%b0%8f%e7%a8%8b%e5%ba%8fui%e5%ba%93)
+		- [git协作](#git%e5%8d%8f%e4%bd%9c)
+		- [甲方提供的接口及账号](#%e7%94%b2%e6%96%b9%e6%8f%90%e4%be%9b%e7%9a%84%e6%8e%a5%e5%8f%a3%e5%8f%8a%e8%b4%a6%e5%8f%b7)
+		- [Customize configuration](#customize-configuration)
 
 # 食安
 
@@ -18,7 +19,7 @@
 - [] 考虑处理刘海屏兼容
 - [] 不确定uni-app是否支持背景图
 - [] 区分环境打包配置比较繁琐
-- [] 接口暂未调用
+- [x] 接口暂未调用
    
 ### 运行项目
 ```
@@ -29,6 +30,9 @@ npm run dev
 然后开发者工具直接打开项目即可
 ```
 
+### 用户角色   
+
+由 `src\store` 中 Authorization 字段定义，接口请求会在header中携带字段，接口判断角色返回，actions调用登录接口获取对应账号Authorization   
 
 ### 项目结构
 ```js

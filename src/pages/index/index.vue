@@ -3,16 +3,19 @@
     <image class="logo"
            src="/static/logo.png"></image>
     <van-button type="info"
+                @click="handleLogin1">先点我没登陆</van-button>
+    <van-button type="info"
                 @click="handleLogin">登录</van-button>
     <view class="f-pt-20">
       登录状态{{isLogin}}
+      <div>token {{Authorization}}</div>
       <text class="title">{{title}}</text>
     </view>
   </view>
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters, mapActions, mapMutations } from 'vuex'
 export default {
   data() {
     return {
@@ -20,25 +23,33 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['isLogin'])
+    ...mapGetters(['isLogin', 'Authorization'])
   },
   methods: {},
   onLoad() {
     console.log(this.$get)
   },
   methods: {
-    ...mapActions(['UPDATE_LOGIN']),
-    handleLogin() {
-			this.UPDATE_LOGIN(1111)
-			this.$get({
-				url: "/sss",
-				params: {}
-			}).then(res => {
-				console.log(res);
-			}).catch(err => {
-				console.log(err);
-				
-			})
+    ...mapActions(['LOGIN']),
+    ...mapMutations(['UPDATE_LOGIN']),
+    async handleLogin() {
+      console.log('登陆开始')
+      await this.LOGIN()
+      console.log('登陆成功')
+    },
+    handleLogin1() {
+      this.UPDATE_LOGIN(1111)
+      this.$post({
+        url: '/xycheck/page.do',
+        // url: '/appFoodType/foodTypeAndVariety.do',
+        data: { pageSize: '20', currentPage: '1', order: 'desc' }
+      })
+        .then(res => {
+          console.log(res)
+        })
+        .catch(err => {
+          console.log(err)
+        })
     }
   }
 }
