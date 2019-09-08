@@ -51,7 +51,7 @@ Authorization 不正确会接口调用失败， 目前接口直接使用app的�
 │ ├─static/           //静态文件 图片
 │ ├─store/            //全局状态vuex
 │ ├─pages.json        //配置小程序页面
-│ ├─manifest.json     //微信小程序的配置：appid、微信开发工具寻址的小程序目录等
+│ ├─manifest.json     //小程序的配置(暂不用)
 │ ├─uni.scss          //uni-app提供的全局样式变量文件 含mixin
 │ ├─App.vue           //理解为小程序的app.js入口文件 包含小程序启动的生命周期
 │ └─main.js           //挂载小程序页面
