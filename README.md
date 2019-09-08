@@ -144,10 +144,10 @@ git checkout -b feature-v1.0-a origin/feature-v1.0
 git push origin feature-v1.0-a
 
 # 拉取最新的1.0协作代码
-git fetch --all
-git merge origin feature-v1.0
-# 或者
 git pull origin feature-v1.0
+## 或者
+git fetch --all
+git merge feature-v1.0
 ```
 
 ### 甲方提供的接口及账号
