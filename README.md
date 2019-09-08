@@ -127,8 +127,22 @@ https://17qu.top/gitji-chu/
 版本主分支定为 feature-v1.0
 
 1. 分别基于 feature-v1.0 拉取自己的分支如：feature-v1.0-a feature-v1.0-b
+   `git checkout -b feature-v1.0-a origin/feature-v1.0`
 2. 只推送代码至自己的分支
 3. 完成项目合并 feature-v1.0
+
+**指令**  
+
+```bash
+# 拉取代码
+git clone https://github.com/justwe7/s-an.git
+
+# 创建自己的分支
+git checkout -b feature-v1.0-a origin/feature-v1.0
+
+# 推送自己的分支
+git push origin feature-v1.0-a
+```
 
 ### 甲方提供的接口及账号
 
