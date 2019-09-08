@@ -11,23 +11,28 @@
       <div>token {{Authorization}}</div>
       <text class="title">{{title}}</text>
     </view>
+    <my-test />
   </view>
 </template>
 
 <script>
 import { mapGetters, mapActions, mapMutations } from 'vuex'
+import myTest from '@/components/testTpl';
 export default {
+  components: {myTest},
   data() {
     return {
       title: 'Hello'
     }
   },
-  computed: {
-    ...mapGetters(['isLogin', 'Authorization'])
+  onShow() {
+    console.log(this.$get)
   },
-  methods: {},
   onLoad() {
     console.log(this.$get)
+  },
+  computed: {
+    ...mapGetters(['isLogin', 'Authorization'])
   },
   methods: {
     ...mapActions(['LOGIN']),

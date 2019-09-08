@@ -4,6 +4,7 @@
 		- [用户角色](#%e7%94%a8%e6%88%b7%e8%a7%92%e8%89%b2)
 		- [项目结构](#%e9%a1%b9%e7%9b%ae%e7%bb%93%e6%9e%84)
 		- [全局 js 变量及方法](#%e5%85%a8%e5%b1%80-js-%e5%8f%98%e9%87%8f%e5%8f%8a%e6%96%b9%e6%b3%95)
+		- [钩子顺序建议](#%e9%92%a9%e5%ad%90%e9%a1%ba%e5%ba%8f%e5%bb%ba%e8%ae%ae)
 		- [css 样式建议](#css-%e6%a0%b7%e5%bc%8f%e5%bb%ba%e8%ae%ae)
 		- [项目配置](#%e9%a1%b9%e7%9b%ae%e9%85%8d%e7%bd%ae)
 		- [引入三方小程序 ui 库](#%e5%bc%95%e5%85%a5%e4%b8%89%e6%96%b9%e5%b0%8f%e7%a8%8b%e5%ba%8f-ui-%e5%ba%93)
@@ -75,6 +76,21 @@ this.$get({
   .catch(err => {
     console.log(err);
   });
+```
+
+### 钩子顺序建议  
+
+```js
+  export default {
+    components: {},
+    data() {
+      return {}
+    },
+    onShow() {},
+    onLoad() {},
+    computed: {},
+    methods: {}
+  }
 ```
 
 ### css 样式建议
