@@ -8,12 +8,30 @@
 					"van-button": "/wxcomponents/vant/button/index"
 				}
 			}
+		},
+		{
+			"path": "pages/checkUploadTripartite/index",
+			"style": {
+				"navigationBarTitleText": "食安第三方检上传"
+			}
+		},
+		{
+			"path": "pages/checkUploadSelf/index",
+			"style": {
+				"navigationBarTitleText": "食安自检上传"
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#f00",
+		"usingComponents": {
+			"van-cell": "/wxcomponents/vant/cell/index",
+			"van-cell-group": "/wxcomponents/vant/cell-group/index",
+			"van-field": "/wxcomponents/vant/field/index",
+			"van-button": "/wxcomponents/vant/button/index"
+		}
 	}
 }

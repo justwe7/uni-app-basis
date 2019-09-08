@@ -61,3 +61,30 @@ export const $post = params => {
     });
   });
 };
+
+/* 异形屏兼容 */
+var screenConfig = {};
+// try {
+const res = uni.getSystemInfoSync();
+const { windowWidth, windowHeight, platform, statusBarHeight, model } = res;
+screenConfig.pixelRate = windowWidth / 750;
+screenConfig.platform = platform;
+screenConfig.statusBarHeight = statusBarHeight;
+if (platform.toLowerCase() == "devtools") {
+  screenConfig.capsuleHeight = 44;
+}
+if (platform.toLowerCase() == "android") {
+  screenConfig.capsuleHeight = 48;
+}
+screenConfig.headHeight =
+  (screenConfig.capsuleHeight + screenConfig.statusBarHeight) /
+  screenConfig.pixelRate; //包括状态及标题内容整个paddingtop hack
+if (statusBarHeight >= 44) {
+  screenConfig.isHighHead = true; //刘海
+}
+if (windowHeight > 750) screenConfig.isAllScreen = true; // 屏幕比例 >16:9
+screenConfig.systemHeight = windowHeight;
+
+export const iPX = model.indexOf("iPhone X") > -1;
+export var screenConfig = screenConfig;
+// } catch (e) {}
