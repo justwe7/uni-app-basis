@@ -1,7 +1,6 @@
 
 /**
  * 上传图片封装
- *
  * @author huaxi.li
  * @date 2019-09-08
  * @export
