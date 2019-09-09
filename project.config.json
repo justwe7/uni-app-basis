@@ -32,16 +32,6 @@
 		"game": {
 			"list": []
 		},
-		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "三方检上传",
-					"pathName": "pages/checkUploadTripartite/index",
-					"scene": null
-				}
-			]
-		}
+		"miniprogram": {}
 	}
 }

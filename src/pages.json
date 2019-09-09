@@ -1,18 +1,18 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/checkUploadTripartite/index",
 			"style": {
-				"navigationBarTitleText": "首页",
-				"usingComponents": {
-					"van-button": "/wxcomponents/vant/button/index"
-				}
+				"navigationBarTitleText": "iPhoneX"
 			}
 		},
 		{
-			"path": "pages/checkUploadTripartite/index",
+			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "上传"
+				"navigationBarTitleText": "基础",
+				"usingComponents": {
+					"van-button": "/wxcomponents/vant/button/index"
+				}
 			}
 		}
 	],
