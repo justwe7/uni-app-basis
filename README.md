@@ -48,7 +48,7 @@ npm run dev
 │ ├─static/           //静态文件 图片
 │ ├─store/            //全局状态vuex
 │ ├─pages.json        //配置小程序页面
-│ ├─manifest.json     //微信小程序的配置：appid、微信开发工具寻址的小程序目录等
+│ ├─manifest.json     //小程序的配置(暂不用)
 │ ├─uni.scss          //uni-app提供的全局样式变量文件 含mixin
 │ ├─App.vue           //理解为小程序的app.js入口文件 包含小程序启动的生命周期
 │ └─main.js           //挂载小程序页面
@@ -78,6 +78,21 @@ this.$get({
   .catch(err => {
     console.log(err);
   });
+```
+
+### 钩子顺序建议  
+
+```js
+  export default {
+    components: {},
+    data() {
+      return {}
+    },
+    onShow() {},
+    onLoad() {},
+    computed: {},
+    methods: {}
+  }
 ```
 
 ### css 样式建议
@@ -147,8 +162,8 @@ git checkout -b feature-v1.0-a origin/feature-v1.0
 git push origin feature-v1.0-a
 
 # 拉取最新的1.0协作代码
-git fetch --all
-git merge origin feature-v1.0
-# 或者
 git pull origin feature-v1.0
+## 或者
+git fetch --all
+git merge feature-v1.0
 ```
