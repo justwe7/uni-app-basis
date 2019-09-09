@@ -1,6 +1,7 @@
 {
-  "name": "shian",
-  "version": "0.1.0",
+  "name": "xxmonster",
+  "version": "1.0.0",
+  "author": "jusetwe! <ilihuaxi@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "npm run dev:mp-weixin",

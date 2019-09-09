@@ -12,13 +12,7 @@
 		{
 			"path": "pages/checkUploadTripartite/index",
 			"style": {
-				"navigationBarTitleText": "食安第三方检上传"
-			}
-		},
-		{
-			"path": "pages/checkUploadSelf/index",
-			"style": {
-				"navigationBarTitleText": "食安自检上传"
+				"navigationBarTitleText": "上传"
 			}
 		}
 	],
